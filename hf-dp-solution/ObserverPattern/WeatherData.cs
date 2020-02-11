@@ -5,36 +5,36 @@ namespace ObserverPattern
 {
     public class WeatherData : ISubject
     {
-        private ICollection<IObserver> _observers;
-        private double _temperature;
-        private double _humidity;
-        private double _pressure;
+        private ICollection<IObserver> observers;
+        private double temperature;
+        private double humidity;
+        private double pressure;
 
         public WeatherData()
         {
-            this._observers = new List<IObserver>();
+            this.observers = new List<IObserver>();
         }
 
         public void NotifyObservers()
         {
-            foreach (var obeserver in this._observers)
+            foreach (var obeserver in this.observers)
             {
-                obeserver.Update(this._temperature, this._humidity, this._pressure);
+                obeserver.Update(this.temperature, this.humidity, this.pressure);
             }
         }
 
         public void RegisterObserver(IObserver o)
         {
-            this._observers.Add(o);
+            this.observers.Add(o);
         }
 
         public void RemoveObserver(IObserver o)
         {
-            bool observerExists = this._observers.Contains(o);
+            bool observerExists = this.observers.Contains(o);
 
             if (observerExists)
             {
-                this._observers.Remove(o);
+                this.observers.Remove(o);
             }
         }
 
@@ -45,9 +45,9 @@ namespace ObserverPattern
 
         public void SetMeasurements(double temperature, double humidity, double pressure)
         {
-            this._temperature = temperature;
-            this._humidity = humidity;
-            this._pressure = pressure;
+            this.temperature = temperature;
+            this.humidity = humidity;
+            this.pressure = pressure;
             this.MeasurementsChanged();
         }
     }
