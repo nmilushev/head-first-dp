@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.1000
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObserverPattern", "ObserverPattern\ObserverPattern.csproj", "{A28DF3E0-EA00-4695-8268-C7277A53068D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ObserverPattern", "ObserverPattern\ObserverPattern.csproj", "{A28DF3E0-EA00-4695-8268-C7277A53068D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrategyPattern", "StrategyPattern\StrategyPattern.csproj", "{ADC016F9-BC7B-4A08-AAB2-455F0EFB3920}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorPattern", "DecoratorPattern\DecoratorPattern.csproj", "{71D98C04-58FB-452F-8734-6F569D569619}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{A28DF3E0-EA00-4695-8268-C7277A53068D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A28DF3E0-EA00-4695-8268-C7277A53068D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A28DF3E0-EA00-4695-8268-C7277A53068D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADC016F9-BC7B-4A08-AAB2-455F0EFB3920}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADC016F9-BC7B-4A08-AAB2-455F0EFB3920}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADC016F9-BC7B-4A08-AAB2-455F0EFB3920}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADC016F9-BC7B-4A08-AAB2-455F0EFB3920}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71D98C04-58FB-452F-8734-6F569D569619}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71D98C04-58FB-452F-8734-6F569D569619}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71D98C04-58FB-452F-8734-6F569D569619}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71D98C04-58FB-452F-8734-6F569D569619}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
