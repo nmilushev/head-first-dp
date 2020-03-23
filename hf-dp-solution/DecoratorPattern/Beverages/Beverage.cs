@@ -2,9 +2,9 @@
 {
     public abstract class Beverage
     {
-        public string Description;
+        public abstract string Description { get; }
 
-        public abstract double Cost { get; }
+        public abstract decimal Cost { get; }
 
         public override string ToString()
         {

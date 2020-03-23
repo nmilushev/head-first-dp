@@ -2,11 +2,8 @@
 {
     class Espresso : Beverage
     {
-        public Espresso()
-        {
-            base.Description = "Espresso";
-        }
+        public override string Description => "Espresso";
 
-        public override double Cost => 1.99;
+        public override decimal Cost => 1.99M;
     }
 }

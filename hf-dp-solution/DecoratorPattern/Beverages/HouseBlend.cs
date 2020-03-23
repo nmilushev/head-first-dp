@@ -2,11 +2,8 @@
 {
     class HouseBlend : Beverage
     {
-        public HouseBlend()
-        {
-            base.Description = "House Blend Coffee";
-        }
+        public override string Description => "House Blend Coffee";
 
-        public override double Cost => 0.89;
+        public override decimal Cost => 0.89M;
     }
 }

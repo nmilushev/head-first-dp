@@ -4,6 +4,13 @@ namespace DecoratorPattern.Condiments
 {
     public abstract class CondimentDecorator : Beverage
     {
-        public abstract new string Description { get; }
+        protected Beverage beverage;
+
+        public CondimentDecorator(Beverage beverage)
+        {
+            this.beverage = beverage;
+        }
+
+        public override string Description => beverage.Description;
     }
 }

@@ -4,15 +4,11 @@ namespace DecoratorPattern.Condiments
 {
     class Whip : CondimentDecorator
     {
-        private Beverage beverage;
-
-        public Whip(Beverage beverage)
-        {
-            this.beverage = beverage;
-        }
+        public Whip(Beverage beverage) : base(beverage)
+        { }
 
         public override string Description => beverage.Description + ", Whip";
 
-        public override double Cost => beverage.Cost + 0.30;
+        public override decimal Cost => beverage.Cost + 0.30M;
     }
 }
