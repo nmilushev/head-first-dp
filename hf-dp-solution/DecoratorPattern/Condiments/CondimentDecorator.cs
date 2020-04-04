@@ -11,6 +11,8 @@ namespace DecoratorPattern.Condiments
             this.beverage = beverage;
         }
 
+        public override decimal Cost => beverage.Cost;
+
         public override string Description => beverage.Description;
     }
 }
